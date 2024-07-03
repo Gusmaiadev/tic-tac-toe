@@ -70,6 +70,7 @@ h1 {
 #players li {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 50%;
   border: 2px solid transparent;
 }
@@ -105,6 +106,7 @@ h1 {
   padding: 0.5rem;
   border-radius: 4px;
   font-weight: bold;
+ 
 }
 
 .player-name {
@@ -348,4 +350,54 @@ ol {
   100% {
     transform: scale(1);
   }
+}
+
+
+@media (max-width:630px){
+  .player {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+}
+
+@media (max-width:530px){
+  #game-board button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+
+  .player-name {
+    font-size: 0.7rem;
+  }
+
+  #game-container{
+    padding: 1rem;
+  }
+  
+  #players li{
+    width: 9rem;
+  }
+  
+  .player input{
+    width: 7rem;
+  }
+
+}
+@media (max-width:385px){
+  #game-board button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1rem;
+  }
+  #players li{
+    width: 7rem;
+  }
+
+  .player input{
+    width: 5rem;
+  }
+ 
 }
